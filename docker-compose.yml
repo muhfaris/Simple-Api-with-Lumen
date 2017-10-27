@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+   db:
+     image: mysql:5.7
+     restart: always
+     ports:
+         - "3360:3360"
+
+   web:
+     depends_on:
+       - db
+     build: .
+     volumes: 
+     - ./blog:/opt/lumen
+     ports:
+       - "8000:80"
+     restart: always
