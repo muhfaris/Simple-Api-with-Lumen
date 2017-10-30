@@ -1,5 +1,6 @@
  ## set up database
- change configuration ```.env```
+ change configuration ```.env``
+
  ```
  APP_ENV=local
 APP_DEBUG=true
