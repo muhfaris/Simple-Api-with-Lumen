@@ -1,8 +1,7 @@
  ## set up database
- change configuration ```.env``
+ change configuration `.env`
 
- ```
- APP_ENV=local
+ ```APP_ENV=local
 APP_DEBUG=true
 APP_KEY=
 APP_TIMEZONE=UTC
@@ -16,8 +15,7 @@ DB_PASSWORD=PASSWORD
 
 CACHE_DRIVER=file
 QUEUE_DRIVER=sync  
-
-``
+```
 
 ## Setup
 - composer update && composer install
