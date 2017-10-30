@@ -15,6 +15,12 @@ class ContactController extends Controller {
   
     }
 
+    public function getcontact($id) {
+        $Contact  = Contact::find($id);  
+        return response()->json($Contact);
+    }
+
+
 }
 
 ?>
