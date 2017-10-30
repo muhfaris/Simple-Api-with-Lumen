@@ -18,9 +18,9 @@ QUEUE_DRIVER=sync
 ```
 
 ## Setup
-- composer update && composer install
-- php artisan migrate
-- php artisan db:seed --class=ContactSeeder
+- `composer update && composer install`
+- `php artisan migrate`
+- `php artisan db:seed --class=ContactSeeder`
 
 
 
