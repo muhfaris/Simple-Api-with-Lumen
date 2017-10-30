@@ -22,5 +22,8 @@ QUEUE_DRIVER=sync
 - `php artisan migrate`
 - `php artisan db:seed --class=ContactSeeder`
 
-
+ ## Run 
+ - `php -S localhost:8000 -t public`
+or
+- `http://<ip address>:<port>/api/v1/contact/`
 
