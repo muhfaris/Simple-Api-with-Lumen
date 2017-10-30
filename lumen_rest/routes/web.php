@@ -16,7 +16,7 @@ $router->get('/api', function () use ($router) {
 });
 
 $router->get('api/v1/contact','ContactController@index');
-
+$router->get('api/v1/contact/{id}','ContactController@getcontact'); 
 
 
 
