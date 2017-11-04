@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class AppServiceProvider extends ServiceProvider
 {
     /**
+<<<<<<< HEAD
      * Bootstrap any application services.
      *
      * @return void
@@ -17,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
+=======
+>>>>>>> lumenContainer
      * Register any application services.
      *
      * @return void

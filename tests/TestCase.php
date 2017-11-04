@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
     /**
@@ -21,5 +22,17 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
         return $app;
+=======
+abstract class TestCase extends Laravel\Lumen\Testing\TestCase
+{
+    /**
+     * Creates the application.
+     *
+     * @return \Laravel\Lumen\Application
+     */
+    public function createApplication()
+    {
+        return require __DIR__.'/../bootstrap/app.php';
+>>>>>>> lumenContainer
     }
 }

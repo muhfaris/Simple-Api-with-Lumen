@@ -3,7 +3,11 @@
 namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
+<<<<<<< HEAD
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+=======
+use Laravel\Lumen\Console\Kernel as ConsoleKernel;
+>>>>>>> lumenContainer
 
 class Kernel extends ConsoleKernel
 {
@@ -13,7 +17,11 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+<<<<<<< HEAD
         // Commands\Inspire::class,
+=======
+        //
+>>>>>>> lumenContainer
     ];
 
     /**
@@ -24,7 +32,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+<<<<<<< HEAD
         // $schedule->command('inspire')
         //          ->hourly();
+=======
+        //
+>>>>>>> lumenContainer
     }
 }

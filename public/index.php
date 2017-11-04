@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -34,6 +35,20 @@ require __DIR__.'/../bootstrap/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+=======
+/*
+|--------------------------------------------------------------------------
+| Create The Application
+|--------------------------------------------------------------------------
+|
+| First we need to get an application instance. This creates an instance
+| of the application / container and bootstraps the application so it
+| is ready to receive HTTP / Console requests from the environment.
+|
+*/
+
+$app = require __DIR__.'/../bootstrap/app.php';
+>>>>>>> lumenContainer
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +62,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
+<<<<<<< HEAD
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
@@ -56,3 +72,6 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+=======
+$app->run();
+>>>>>>> lumenContainer

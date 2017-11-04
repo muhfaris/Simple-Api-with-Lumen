@@ -2,8 +2,12 @@
 
 namespace App\Providers;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+=======
+use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
+>>>>>>> lumenContainer
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -17,6 +21,7 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\EventListener',
         ],
     ];
+<<<<<<< HEAD
 
     /**
      * Register any events for your application.
@@ -29,4 +34,6 @@ class EventServiceProvider extends ServiceProvider
 
         //
     }
+=======
+>>>>>>> lumenContainer
 }

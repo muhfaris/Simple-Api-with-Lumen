@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         // $this->call(UserTableSeeder::class);
 
         App\User::create([
@@ -20,5 +21,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         factory(App\Page::class, 30)->create();
+=======
+        // $this->call('UsersTableSeeder');
+        $this->call(ContactSeeder::class);
+>>>>>>> lumenContainer
     }
 }

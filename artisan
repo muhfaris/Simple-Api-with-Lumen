@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+<<<<<<< HEAD
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -16,6 +17,23 @@
 require __DIR__.'/bootstrap/autoload.php';
 
 $app = require_once __DIR__.'/bootstrap/app.php';
+=======
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+/*
+|--------------------------------------------------------------------------
+| Create The Application
+|--------------------------------------------------------------------------
+|
+| First we need to get an application instance. This creates an instance
+| of the application / container and bootstraps the application so it
+| is ready to receive HTTP / Console requests from the environment.
+|
+*/
+
+$app = require __DIR__.'/bootstrap/app.php';
+>>>>>>> lumenContainer
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +46,7 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 |
 */
 
+<<<<<<< HEAD
 $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
 
 $status = $kernel->handle(
@@ -49,3 +68,10 @@ $status = $kernel->handle(
 $kernel->terminate($input, $status);
 
 exit($status);
+=======
+$kernel = $app->make(
+    'Illuminate\Contracts\Console\Kernel'
+);
+
+exit($kernel->handle(new ArgvInput, new ConsoleOutput));
+>>>>>>> lumenContainer
